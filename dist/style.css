@@ -1,0 +1,160 @@
+/*** GLOBALS ***/
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Top Right close button */
+.tt-tr-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/*** END GLOBALS ***/
+
+/*** COMPONENTS ***/
+
+/* Components: Header */
+.tt-header {
+  background-color: black;
+  height: 35px;
+}
+.tt-header-link {
+  font-size: 1.5rem;
+  margin: 7px auto;
+}
+.tt-header-link > a {
+  font-weight: 300;
+  color: white;
+}
+
+/* Components: Hyundai Happenings */
+.tt-happenings-container {
+  position: relative;
+}
+
+/* Components: Years Header */
+.tt-year-header {
+  margin: 20px 0;
+}
+
+.tt-year-link > a {
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  color: #CCC;
+}
+
+.tt-year-link > a:hover {
+  text-decoration: none;
+}
+
+.tt-year-link.active > a {
+  color: #222;
+}
+
+/* Components: Car List */
+.tt-car-list-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.tt-car-list-item-wrapper {
+  padding: 7px;
+}
+
+.tt-car-list-item-wrapper:hover {
+  background-color: #EFEFEF;
+}
+
+.tt-car-list-item-link {
+  color: black;
+}
+
+.tt-car-list-item-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.tt-car-list-item-name {
+  border-bottom: 3px solid black;
+  width: 70%;
+  padding: 2px 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+/*** END COMPONENTS ***/
+
+
+/****** HELPERS ******/
+
+.col-xs-auto, .col-xs1-auto, .col-sm-auto, .col-md-auto, .col-lg-auto,
+.col-xs-auto-right, .col-xs1-auto-right, .col-sm-auto-right, .col-md-auto-right, .col-lg-auto-right,
+.col-middle {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-middle {
+  display: table;
+}
+
+.col-xs-auto {
+  float: left;
+}
+
+.col-xs-auto-right {
+  float: right;
+}
+
+@media (min-width: 480px) {
+  .col-xs1-auto {
+    float: left;
+  }
+
+  .col-xs1-auto-right {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-sm-auto {
+    float: left;
+  }
+
+  .col-sm-auto-right {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-auto {
+    float: left;
+  }
+
+  .col-md-auto-right {
+    float: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-auto {
+    float: left;
+  }
+
+  .col-lg-auto-right {
+    float: right;
+  }
+}
+
+/****** END HELPERS ******/
